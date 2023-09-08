@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+}
+
+/* HEADER */
+
+header {
+
+  background-color: red;
+  padding: 50px 0;
+  text-align: center;
+  border-bottom-left-radius: 7.5px;
+  border-bottom-right-radius: 7.5px;
+
+}
+
+header h1 {
+
+  color: white;
+  font-size: 4rem;
+
+}
