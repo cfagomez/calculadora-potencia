@@ -1,5 +1,11 @@
 body {
   margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 60%;
+  margin: auto;
 }
 
 /* HEADER */
@@ -25,7 +31,6 @@ header h1 {
 
 main {
   
-  margin: 0 auto;
   border: 2.5px solid black;
   padding: 50px 0;
   background-color: red;
@@ -50,5 +55,40 @@ main h2 {
   font-size: 1.5rem;
   border-radius: 5px;
   width: 25%;
+
+}
+
+/* FORMULARIO */
+
+form {
+
+  border: 2px black solid;
+  padding: 50px 25px;
+  color: white;
+  font-size: 1.5rem;
+  text-align: left;
+
+}
+
+input[type="text"] {
+
+  padding: 2.5px 5px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+
+}
+
+.form-container {
+
+  margin-top: 40px;
+
+}
+
+.campo {
+
+  width: 60%;
+  margin: auto;
+  margin-bottom: 10px;
 
 }
