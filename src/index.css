@@ -20,3 +20,35 @@ header h1 {
   font-size: 4rem;
 
 }
+
+/* MAIN */
+
+main {
+  
+  margin: 0 auto;
+  border: 2.5px solid black;
+  padding: 50px 0;
+  background-color: red;
+  width: 50%;
+  text-align: center;
+
+}
+
+main h2 {
+
+  font-size: 3rem;
+  color: white;
+  margin-bottom: 40px;
+
+}
+
+.button {
+
+  padding: 2.5px 5px;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  border-radius: 5px;
+  width: 25%;
+
+}

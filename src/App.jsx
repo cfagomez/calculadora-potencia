@@ -6,8 +6,8 @@ function App() {
         <h1>Calculadora de Potencia</h1>
       </header>
       <main>
-        <h1>¿Que desea calcular?</h1>
-        <button>Planas</button>
+        <h2>¿Que desea calcular?</h2>
+        <button className="button">Planas</button>
       </main>
     </>
   )
