@@ -39,7 +39,7 @@ const Formulario = () => {
         <div className='campo'>
             <label>Largo:</label>
             <input 
-              type="text"
+              type="number"
               value={largo}
               name='largo'
               onChange={(e) => setResistencia({
@@ -51,7 +51,7 @@ const Formulario = () => {
         <div className='campo'>
             <label>Ancho:</label>
             <input 
-              type="text"
+              type="number"
               value={ancho}
               name='ancho'
               onChange={(e) => setResistencia({

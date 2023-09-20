@@ -1,5 +1,7 @@
 export default function calcularPotencia(largo, ancho) {
 
-    return largo * ancho * 3.14
+    const potencia = ((largo * ancho) * 4) / 100
+
+    return potencia
 
 }
