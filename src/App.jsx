@@ -1,4 +1,5 @@
 import Formulario from "./components/Formulario"
+import ListaOpciones from "./components/ListaOpciones"
 
 function App() {
 
@@ -7,11 +8,14 @@ function App() {
       <header>
         <h1>Calculadora de Potencia</h1>
       </header>
-      <main className="container">
-        <div className="form-container">
-          <Formulario />
-        </div>
-      </main>
+      <div className="flex">
+        <ListaOpciones />
+        <main className="container">
+          <div className="form-container">
+            <Formulario />
+          </div>
+        </main>
+      </div>
     </>
   )
 }
