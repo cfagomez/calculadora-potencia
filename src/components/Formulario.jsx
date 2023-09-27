@@ -83,6 +83,11 @@ const Formulario = () => {
     e.preventDefault()
 
     setTipoResistencia(null)
+    setResistencia({
+      largo: '',
+      ancho: '',
+      diametro: ''
+    })
 
   }
 

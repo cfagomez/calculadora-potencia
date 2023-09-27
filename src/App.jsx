@@ -1,5 +1,4 @@
 import Formulario from "./components/Formulario"
-import ListaOpciones from "./components/ListaOpciones"
 
 function App() {
 
