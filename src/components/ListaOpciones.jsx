@@ -1,4 +1,5 @@
 const ListaOpciones = () => {
+  
   return (
     <div className="lista-opciones">
         <button>Planas</button>

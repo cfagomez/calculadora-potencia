@@ -1,17 +1,19 @@
 import { createContext, useState } from "react"
-import calcularPotencia from "../helpers/calculoPotencia"
 
 export const PlanasContext = createContext()
 
 const PlanasProvider = ({children}) => {
 
+
+    const [tipoResistencia, setTipoResistencia] = useState(null)
     const [resistencia, setResistencia] = useState({
         largo: '',
-        ancho: ''
+        ancho: '',
+        diametro: ''
     })
 
   return (
-    <PlanasContext.Provider value={{resistencia, setResistencia}}>
+    <PlanasContext.Provider value={{resistencia, setResistencia, tipoResistencia, setTipoResistencia}}>
         {children}
     </PlanasContext.Provider>
   )

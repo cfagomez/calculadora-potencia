@@ -16,6 +16,19 @@ body {
 
 .flex {
   display: flex;
+  justify-content: space-around;
+}
+
+.padding-xl {
+
+  padding: 75px 0
+
+}
+
+.font-size-xl {
+
+  font-size: 2.25rem;
+
 }
 
 /* HEADER */
@@ -50,6 +63,8 @@ header h1 {
   padding: 0;
   width: 25%;
   border-top-right-radius: 5px;
+  height: min-content;
+  box-shadow: 0px 10px 33px -17px rgba(173,173,173,1);
 
 }
 
@@ -125,9 +140,27 @@ main h2 {
 
 form {
 
-  padding: 30px 15px;
+  padding: 20px 10px;
   color: rgb(40, 40, 40);
   font-size: 1.5rem;
+
+}
+
+select {
+
+  width: 100%;
+  font-size: 1.25rem;
+  border: 2px solid rgb(40, 40, 40);
+  border-radius: 5px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  font-family: "Space Mono", monospace;
+
+}
+
+select:focus {
+
+  border: 2px solid rgb(193, 41, 46);
 
 }
 
@@ -139,6 +172,9 @@ input[type="number"] {
   display: block;
   width: 100%;
   outline: none;
+  margin-top: 2px;
+  font-family: "Space Mono", monospace;
+  font-family: "Space Mono", monospace;
 
 }
 
@@ -152,13 +188,28 @@ input[type="submit"] {
   padding: 10px 20px;
   background-color: rgb(193, 41, 46);
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
-  width: 60%;
+  width: 33.3%;
   cursor: pointer;
-  box-shadow: 5px 5px #999;
+  font-family: "Space Mono", monospace;
+
+}
+
+input[type="button"] {
+
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: rgb(112,102,224);
+  color: white;
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  width: 33.3%;
+  cursor: pointer;
   font-family: "Space Mono", monospace;
 
 }
@@ -169,23 +220,23 @@ input[type="submit"]:hover {
 
 }
 
-input[type="submit"]:active {
-  background-color: rgb(130,41,46);
-  box-shadow: 2.5px 2.5px #666;
-  transform: translateY(2.5px) translateX(2.5px);
+input[type="button"]:hover {
+
+  background-color: rgb(102, 90, 233)
+
 }
 
 .campo {
 
   width: 75%;
   margin: auto;
-  margin-bottom: 20px;
   text-align: left;
 
 }
 
 .p-form {
 
+  margin-top: 10px;
   color: rgb(193, 41, 46);
   font-size: medium;
 

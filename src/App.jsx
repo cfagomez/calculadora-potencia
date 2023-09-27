@@ -8,8 +8,7 @@ function App() {
       <header>
         <h1>Calculadora de Potencia</h1>
       </header>
-      <div className="flex">
-        <ListaOpciones />
+      <div>
         <main className="container">
           <div className="form-container">
             <Formulario />
