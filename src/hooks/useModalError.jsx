@@ -6,7 +6,7 @@ const useModalError = () => {
     Swal.fire({
         icon: 'error',
         title: 'Error',
-        text: 'Debes ingresar los datos correspondientes!'
+        text: 'Debes completar todos los campos!'
       })
 
   )

@@ -36,7 +36,7 @@ body {
 header {
 
   background-color: rgb(193, 41, 46);
-  border-bottom: 10px solid rgb(130, 41, 46);
+  border-bottom: 10px solid rgb(182, 39, 44);
   padding: 12.5px 0;
   text-align: center;
   border-bottom-left-radius: 7.5px;
@@ -80,13 +80,6 @@ header h1 {
   font-size: 1.5rem;
   text-align: left;
   font-family: "Space Mono", monospace;
-
-}
-
-.lista-opciones button:hover {
-
-  background-color: rgb(130, 41, 46);
-  cursor: pointer;
 
 }
 
@@ -216,13 +209,25 @@ input[type="button"] {
 
 input[type="submit"]:hover {
 
-  background-color: rgb(130,41,46)
+  background-color: rgb(182, 39, 44)
+
+}
+
+input[type="submit"]:focus {
+
+  outline: 3px solid rgb(250, 90, 95)
 
 }
 
 input[type="button"]:hover {
 
   background-color: rgb(102, 90, 233)
+
+}
+
+input[type="button"]:focus {
+
+  outline: 3px solid rgb(161, 153, 248)
 
 }
 
