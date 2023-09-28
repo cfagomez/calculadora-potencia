@@ -5,22 +5,35 @@ import {
   calcularPotenciaCartuchos, 
   calcularPotenciaSunchos
 } from '../helpers/calculoPotencia'
-import useModalError from '../hooks/useModalError'
 
 const Formulario = () => {
 
-  const {tipoResistencia, setTipoResistencia, resistencia, setResistencia} = useResistenciasContext()
+  const {tipoResistencia, setTipoResistencia, resistencia, setResistencia, setError, mensajeError, setMensajeError} = useResistenciasContext()
   const {largo, ancho, diametro} = resistencia
 
   const handleSubmit = (e) => {
 
     e.preventDefault()
 
+    if ( largo < 1 || ancho < 1 || diametro < 1) {
+
+      setMensajeError('¡Los valores ingresados deben ser mayores a 0!')
+
+      setError()
+      
+      return
+
+    }
+
     if (tipoResistencia === 'planas') {
 
       if (!largo.trim() || !ancho.trim() ) {
 
-        return useModalError()
+        setMensajeError('¡Debes completar todos los campos!')
+
+        setError()
+        
+        return
   
       } else {
 
@@ -40,7 +53,11 @@ const Formulario = () => {
 
       if (!diametro.trim() || !ancho.trim() ) {
 
-        return useModalError()
+        setMensajeError('¡Debes completar todos los campos!')
+
+        setError()
+        
+        return
   
       } else {
 
@@ -60,7 +77,11 @@ const Formulario = () => {
 
       if (!largo.trim() || !diametro.trim() ) {
 
-        return useModalError()
+        setMensajeError('¡Debes completar todos los campos!')
+
+        setError()
+        
+        return
   
       } else {
 
@@ -184,7 +205,9 @@ const Formulario = () => {
               }                
                 <p className='campo p-form'>* Indicar medidas en milímetros</p>
                 <div className='campo flex'>
-                  <input type="submit"/>
+                  <input 
+                    value="Calcular"
+                    type="submit"/>
                   <input
                     onClick={handleClick} 
                     type="button"

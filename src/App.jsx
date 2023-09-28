@@ -1,6 +1,10 @@
 import Formulario from "./components/Formulario"
+import ModalError from "./components/ModalError"
+import UseResistenciasContext from "./hooks/UseResistenciasContext"
 
 function App() {
+
+  const {error} = UseResistenciasContext()
 
   return (
     <>
@@ -14,6 +18,20 @@ function App() {
           </div>
         </main>
       </div>
+      {
+
+        error ? (
+
+          null
+
+        ) : (
+
+          <ModalError />
+
+        )
+
+      }
+      
     </>
   )
 }
