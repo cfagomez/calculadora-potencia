@@ -2,7 +2,7 @@ import UseResistenciasContext from "../hooks/UseResistenciasContext"
 
 const ModalError = () => {
 
-    const {error, setError, mensajeError} = UseResistenciasContext()
+    const {setError, mensajeError, setMensajeError} = UseResistenciasContext()
 
   return (
     <div className='modal-error'>
@@ -19,7 +19,11 @@ const ModalError = () => {
             <button 
                 type='button'
                 className='button-modal'
-                onClick={() => setError(!error)}
+                onClick={() => {
+                    setError(false),
+                    setMensajeError('')
+                  }
+                }
             >
                 Cerrar
             </button>

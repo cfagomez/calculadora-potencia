@@ -20,15 +20,7 @@ function App() {
       </div>
       {
 
-        error ? (
-
-          null
-
-        ) : (
-
-          <ModalError />
-
-        )
+        error && <ModalError />
 
       }
       

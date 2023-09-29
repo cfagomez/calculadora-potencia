@@ -11,7 +11,7 @@ const PlanasProvider = ({children}) => {
         ancho: '',
         diametro: ''
     })
-    const [error, setError] = useState(false)
+    const [error, setError] = useState(null)
     const [mensajeError, setMensajeError] = useState('')
 
   return (

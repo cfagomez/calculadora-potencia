@@ -15,27 +15,25 @@ const Formulario = () => {
 
     e.preventDefault()
 
-    if ( largo < 1 || ancho < 1 || diametro < 1) {
-
-      setMensajeError('¡Los valores ingresados deben ser mayores a 0!')
-
-      setError()
-      
-      return
-
-    }
-
     if (tipoResistencia === 'planas') {
 
       if (!largo.trim() || !ancho.trim() ) {
 
         setMensajeError('¡Debes completar todos los campos!')
 
-        setError()
+        setError(true)
         
         return
   
-      } else {
+      } else if (largo < 1 || ancho < 1) {
+
+          setMensajeError('¡Los valores ingresados deben ser mayores a 0!')
+    
+          setError(true)
+          
+          return
+    
+        } else {
 
         Swal.fire(`Potencia recomendada: ${calcularPotenciaPlanas(largo, ancho)}w`)
 
@@ -55,11 +53,19 @@ const Formulario = () => {
 
         setMensajeError('¡Debes completar todos los campos!')
 
-        setError()
+        setError(true)
         
         return
   
-      } else {
+      } else if (diametro < 1 || ancho < 1) {
+
+          setMensajeError('¡Los valores ingresados deben ser mayores a 0!')
+    
+          setError(true)
+          
+          return
+    
+        } else {
 
         Swal.fire(`Potencia recomendada: ${calcularPotenciaSunchos(diametro, ancho)}w`)
 
@@ -79,13 +85,21 @@ const Formulario = () => {
 
         setMensajeError('¡Debes completar todos los campos!')
 
-        setError()
+        setError(true)
         
         return
   
-      } else {
+      } else if (largo < 1 || diametro < 1) {
 
-        Swal.fire(`Potencia recomendada: ${calcularPotenciaCartuchos(largo, diametro)}w`)
+          setMensajeError('¡Los valores ingresados deben ser mayores a 0!')
+    
+          setError(true)
+          
+          return
+    
+        } else {
+
+        Swal.fire(`Potencia recomendada: ${calcularPotenciaPlanas(largo, diametro)}w`)
 
         setResistencia({
           largo: '',
