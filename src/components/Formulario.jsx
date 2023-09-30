@@ -85,7 +85,7 @@ const Formulario = () => {
     
         } else {
 
-          setResultado(calcularPotenciaPlanas(largo, diametro))
+          setResultado(calcularPotenciaCartuchos(largo, diametro))
 
       }
 
