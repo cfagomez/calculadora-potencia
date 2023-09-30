@@ -1,9 +1,9 @@
 import { useContext } from 'react'
-import { PlanasContext } from '../context/planasProvider'
+import { ResistenciasContext } from '../context/ResistenciasProvider'
 
 const UseResistenciasContext = () => {
   return (
-    useContext(PlanasContext)
+    useContext(ResistenciasContext)
   )
 }
 

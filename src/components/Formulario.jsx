@@ -1,5 +1,4 @@
 import useResistenciasContext from '../hooks/UseResistenciasContext'
-import Swal from 'sweetalert2'
 import {
   calcularPotenciaPlanas, 
   calcularPotenciaCartuchos, 

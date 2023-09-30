@@ -1,8 +1,8 @@
 import { createContext, useState } from "react"
 
-export const PlanasContext = createContext()
+export const ResistenciasContext = createContext()
 
-const PlanasProvider = ({children}) => {
+const ResistenciasProvider = ({children}) => {
 
 
     const [tipoResistencia, setTipoResistencia] = useState(null)
@@ -16,10 +16,10 @@ const PlanasProvider = ({children}) => {
     const [mensajeError, setMensajeError] = useState('')
 
   return (
-    <PlanasContext.Provider value={{resistencia, setResistencia, tipoResistencia, setTipoResistencia, error, setError, mensajeError, setMensajeError, resultado, setResultado}}>
+    <ResistenciasContext.Provider value={{resistencia, setResistencia, tipoResistencia, setTipoResistencia, error, setError, mensajeError, setMensajeError, resultado, setResultado}}>
         {children}
-    </PlanasContext.Provider>
+    </ResistenciasContext.Provider>
   )
 }
 
-export default PlanasProvider
+export default ResistenciasProvider
