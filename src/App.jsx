@@ -1,10 +1,11 @@
 import Formulario from "./components/Formulario"
 import ModalError from "./components/ModalError"
+import ModalResultado from "./components/ModalResultado"
 import UseResistenciasContext from "./hooks/UseResistenciasContext"
 
 function App() {
 
-  const {error} = UseResistenciasContext()
+  const {error, resultado} = UseResistenciasContext()
 
   return (
     <>
@@ -23,7 +24,9 @@ function App() {
         error && <ModalError />
 
       }
-      
+      {
+        resultado && <ModalResultado />
+      }
     </>
   )
 }

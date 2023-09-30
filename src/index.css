@@ -247,9 +247,9 @@ input[type="button"]:focus {
 
 }
 
-/* MODAL ERROR */
+/* MODAL */
 
-.modal-error {
+.modal {
 
   display: flex;
   position: fixed;
@@ -267,7 +267,7 @@ input[type="button"]:focus {
 
 }
 
-.modal-error-content {
+.modal-content {
 
   background-color: rgb(255,255,255);
   margin: auto;
@@ -279,7 +279,7 @@ input[type="button"]:focus {
 
 }
 
-.modal-error-content h3 {
+.modal-content h3 {
 
   margin-top: 30px;
   font-size: 2.5rem;
@@ -287,11 +287,20 @@ input[type="button"]:focus {
 
 }
 
-.modal-error-content p {
+.p-error {
 
   margin-top: 10px;
   color: rgb(193, 41, 46);
   font-size: 1.125rem;
+  font-weight: bold;
+
+}
+
+.p-success {
+
+  margin-top: 10px;
+  color: black;
+  font-size: 2rem;
   font-weight: bold;
 
 }
@@ -321,5 +330,23 @@ input[type="button"]:focus {
 .button-modal:focus {
 
   outline: 3px solid rgb(161, 153, 248)
+
+}
+
+.btn-success {
+
+  background-color: rgb(65,173,73);
+
+}
+
+.btn-success:hover {
+
+  background-color: rgb(55, 151, 62);
+
+}
+
+.btn-success:focus {
+
+  outline: 3px solid rgb(95, 168, 100);
 
 }

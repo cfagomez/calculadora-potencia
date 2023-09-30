@@ -11,11 +11,12 @@ const PlanasProvider = ({children}) => {
         ancho: '',
         diametro: ''
     })
+    const [resultado, setResultado] = useState(null)
     const [error, setError] = useState(null)
     const [mensajeError, setMensajeError] = useState('')
 
   return (
-    <PlanasContext.Provider value={{resistencia, setResistencia, tipoResistencia, setTipoResistencia, error, setError, mensajeError, setMensajeError}}>
+    <PlanasContext.Provider value={{resistencia, setResistencia, tipoResistencia, setTipoResistencia, error, setError, mensajeError, setMensajeError, resultado, setResultado}}>
         {children}
     </PlanasContext.Provider>
   )

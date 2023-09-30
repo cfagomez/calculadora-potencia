@@ -5,8 +5,8 @@ const ModalError = () => {
     const {setError, mensajeError, setMensajeError} = UseResistenciasContext()
 
   return (
-    <div className='modal-error'>
-      <div className='modal-error-content'>
+    <div className='modal'>
+      <div className='modal-content'>
         <div>
             <img 
                 src="../../img/icon-error.svg" 
@@ -15,7 +15,7 @@ const ModalError = () => {
                 height="100px"
             />
             <h3>Error</h3>
-            <p>{mensajeError}</p>
+            <p className="p-error">{mensajeError}</p>
             <button 
                 type='button'
                 className='button-modal'

@@ -8,12 +8,10 @@ import {
 
 const Formulario = () => {
 
-  const {tipoResistencia, setTipoResistencia, resistencia, setResistencia, setError, mensajeError, setMensajeError} = useResistenciasContext()
+  const {tipoResistencia, setTipoResistencia, resistencia, setResistencia, setError, mensajeError, setMensajeError, setResultado} = useResistenciasContext()
   const {largo, ancho, diametro} = resistencia
 
-  const handleSubmit = (e) => {
-
-    e.preventDefault()
+  const validarFormulario = () => {
 
     if (tipoResistencia === 'planas') {
 
@@ -35,13 +33,7 @@ const Formulario = () => {
     
         } else {
 
-        Swal.fire(`Potencia recomendada: ${calcularPotenciaPlanas(largo, ancho)}w`)
-
-        setResistencia({
-          largo: '',
-          ancho: '',
-          diametro: ''
-        })
+        setResultado(calcularPotenciaPlanas(largo, ancho))
 
       }
 
@@ -67,13 +59,7 @@ const Formulario = () => {
     
         } else {
 
-        Swal.fire(`Potencia recomendada: ${calcularPotenciaSunchos(diametro, ancho)}w`)
-
-        setResistencia({
-          largo: '',
-          ancho: '',
-          diametro: ''
-        })
+          setResultado(calcularPotenciaSunchos(diametro, ancho))
 
       }
 
@@ -99,17 +85,19 @@ const Formulario = () => {
     
         } else {
 
-        Swal.fire(`Potencia recomendada: ${calcularPotenciaPlanas(largo, diametro)}w`)
-
-        setResistencia({
-          largo: '',
-          ancho: '',
-          diametro: ''
-        })
+          setResultado(calcularPotenciaPlanas(largo, diametro))
 
       }
 
     }
+
+  }
+
+  const handleSubmit = (e) => {
+
+    e.preventDefault()
+
+    validarFormulario()
 
   }
 
