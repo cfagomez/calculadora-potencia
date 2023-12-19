@@ -9,7 +9,7 @@ const ModalResultado = () => {
       <div className='modal-content'>
         <div>
             <img 
-                src='../img/icon-success.svg' 
+                src="../../img/icon-success.svg" 
                 alt="Validado"
                 width="100px"
                 height="100px"

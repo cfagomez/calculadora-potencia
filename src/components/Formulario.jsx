@@ -205,7 +205,7 @@ const Formulario = () => {
 
               }                
                 <p className='campo p-form'>* Indicar medidas en milímetros</p>
-                <div className='campo flex'>
+                <div className='campo-flex'>
                   <input 
                     value="Calcular"
                     type="submit"/>

@@ -9,7 +9,7 @@ const ModalError = () => {
       <div className='modal-content'>
         <div>
             <img 
-                src="../img/icon-error.svg" 
+                src="../../assets/img/icon-error.svg" 
                 alt="Error"
                 width="100px"
                 height="100px"
